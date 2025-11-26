@@ -16,7 +16,7 @@ struct WelcomeView: View {
       Spacer()
       VStack(spacing: 0){
         welcomeImage
-        WelcomeText
+        welcomeText
       }
       Spacer()
       getStartedButton
@@ -37,12 +37,12 @@ private extension WelcomeView {
       .frame(maxWidth:.infinity)
   }
   
-  var WelcomeText: some View {
+  var welcomeText: some View {
     Text("Effortlessly calculate your income. \nLet's get started!")
       .font(.title3)
       .fontWeight(.medium)
       .multilineTextAlignment(.center)
-      .foregroundStyle(Color.gray)
+      .foregroundStyle(Color.appTheme.secondaryText)
   }
   
   var getStartedButton: some View {
