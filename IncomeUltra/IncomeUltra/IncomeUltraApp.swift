@@ -9,9 +9,9 @@ import SwiftUI
 
 @main
 struct IncomeUltraApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  var body: some Scene {
+    WindowGroup {
+      AppStartingView()
     }
+  }
 }

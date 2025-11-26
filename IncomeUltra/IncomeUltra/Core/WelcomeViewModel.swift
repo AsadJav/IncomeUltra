@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+@MainActor
+final class WelcomeViewModel: ObservableObject {
+  
+  func getAppName() -> String {
+    "Income Ultra"
+  }
+  
+}

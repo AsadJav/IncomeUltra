@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+@MainActor
+final class AppStartingViewModel: ObservableObject {
+  @Published var shouldShowWelcomeView: Bool = true
+  
+}
