@@ -9,7 +9,32 @@ import SwiftUI
 
 struct HomeTabView: View {
   var body: some View {
-    Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    TabView {
+      incomeTabItemView
+      settingsTabItemView
+    }
+  }
+}
+
+private extension HomeTabView {
+  var incomeTabItemView: some View {
+    NavigationStack {
+      IncomeView()
+    }
+    .tabItem {
+      Image(systemName: "dollarsign.square")
+      Text("Income")
+    }
+  }
+  
+  var settingsTabItemView: some View {
+    NavigationStack {
+      SettingsView()
+    }
+    .tabItem {
+      Image(systemName: "gearshape")
+      Text("Settings")
+    }
   }
 }
 
